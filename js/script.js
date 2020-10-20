@@ -3,13 +3,12 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
-
-
-
-  const div = document.getElementById("quote-box");
+// ============ Global Variables===========
+const citation = document.querySelector('.citation');
+const year = document.querySelector('.year');
+const theme = document.querySelector('.theme');
+const bodyBg = document.querySelector('body')
+const div = document.getElementById("quote-box");
 /*** 
  * `quotes` array 
 ***/
@@ -80,14 +79,13 @@ function getRandomColor(arr) {
 /***
  * `printQuote` function
 ***/
-const citation = document.querySelector('.citation');
-const year = document.querySelector('.year');
-const theme = document.querySelector('.theme');
+
+
+// Responsible for the refreshing of the quote and background-color every 10 seconds
+let timer = setInterval(printQuote, 10000)
+
 
 // Prints a new quote and background-color every 10 seconds
-let timer = setInterval(printQuote, 10000)
-const bodyBg = document.querySelector('body')
-
 function printQuote (message) {
   let randomQuote = (getRandomQuote(quotes));
   let htmlString = `
@@ -103,7 +101,7 @@ function printQuote (message) {
                 }
                 
     document.getElementById('quote-box').innerHTML = htmlString;
-    bodyBg.style.backgroundColor = (getRandomColor(arrayOfColors)); //Prints out random background-color
+    bodyBg.style.backgroundColor = (getRandomColor(arrayOfColors)); // Responsible for random background-color
 } 
 
 /***
