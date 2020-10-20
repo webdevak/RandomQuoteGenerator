@@ -105,11 +105,11 @@ h1 {
   font-style: italic;
 }
 
-.theme {
+.tags {
   font-style: italic;
 }
 
-.theme:before {
+.tags:before {
   content: ", ";
   font-style: normal;
 }
