@@ -20,35 +20,35 @@ const quotes = [
       source: "Michelle Obama",
       citation: 'Pintrest',
       year: '2017',
-      theme: "Motivational"
+      tags: "Motivational"
   },
   {
       quote: "Impossible is just an opinion.",
       source: "Paulo Coelho",
       citation: 'Pintrest',
       year: '',
-      theme: "Motivational"
+      tags: "Motivational"
   },
   {
      quote:  "Magic is believing in yourself. If you can make that happen, you can make anything happen.",
       source: "Johann Wolfgang Von Goethe",
       citation: 'Quote Fancy',
       year: '',
-      theme: "Motivational"
+      tags: "Motivational"
   },
   {
       quote: "Hustle in silence and let your success make the noise.",
       source: "Unknown",
       citation: 'Pintrest',
       year: '',
-      theme: "Motivational"
+      tags: "Motivational"
   },
   {
       quote: "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.",
       source: "Patrick McKenzie",
       citation: "Twitter",
       year: "2016",
-      theme: "Motivational"
+      tags: "Motivational"
   }
 ]
 
