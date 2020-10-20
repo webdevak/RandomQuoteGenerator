@@ -67,7 +67,6 @@ function getRandomQuote(arr) {
   return randomQuotes
 }
 
-
 /***
  * `getRandomColors` function
 ***/
@@ -77,10 +76,6 @@ function getRandomColor(arr) {
   let randomColors = arrayOfColors[random];
   return  randomColors
 }
-
-
-
-
 
 /***
  * `printQuote` function
@@ -111,17 +106,9 @@ function printQuote (message) {
     bodyBg.style.backgroundColor = (getRandomColor(arrayOfColors)); //Prints out random background-color
 } 
 
-
-
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-const loadQuote = document.getElementById('load-quote');
-
-loadQuote.addEventListener('click', (e) =>printQuote(), false)
-
-
-
-// document.getElementById('load-quote').addEventListener("click", printQuote(), false);
+document.getElementById('load-quote').addEventListener('click', (e) => printQuote(), false)
