@@ -97,7 +97,7 @@ function printQuote (message) {
              
                   htmlString += `<span class="year">${randomQuote.year}</span> `  
              
-                  htmlString += `<span class="theme">${randomQuote.theme}</span> </p>`
+                  htmlString += `<span class="tags">${randomQuote.tags}</span> </p>`
                 }
                 
     document.getElementById('quote-box').innerHTML = htmlString;
