@@ -6,7 +6,6 @@ project 1 - A Random Quote Generator
 // ============ Global Variables===========
 const citation = document.querySelector('.citation');
 const year = document.querySelector('.year');
-const tags = document.querySelector('.tags');
 const bodyBg = document.querySelector('body')
 const div = document.getElementById("quote-box");
 /*** 
