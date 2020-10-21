@@ -6,7 +6,7 @@ project 1 - A Random Quote Generator
 // ============ Global Variables===========
 const citation = document.querySelector('.citation');
 const year = document.querySelector('.year');
-const theme = document.querySelector('.theme');
+const tags = document.querySelector('.tags');
 const bodyBg = document.querySelector('body')
 const div = document.getElementById("quote-box");
 /*** 
@@ -84,7 +84,6 @@ function getRandomColor(arr) {
 // Responsible for the refreshing of the quote and background-color every 10 seconds
 let timer = setInterval(printQuote, 10000)
 
-
 // Prints a new quote and background-color every 10 seconds
 function printQuote (message) {
   let randomQuote = (getRandomQuote(quotes));
@@ -100,7 +99,7 @@ function printQuote (message) {
                   htmlString += `<span class="tags">${randomQuote.tags}</span> </p>`
                 }
                 
-    document.getElementById('quote-box').innerHTML = htmlString;
+    document.getElementById('quote-box').innerHTML = htmlString; // Displays the quote info to the page
     bodyBg.style.backgroundColor = (getRandomColor(arrayOfColors)); // Responsible for random background-color
 } 
 
